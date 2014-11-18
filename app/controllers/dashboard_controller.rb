@@ -1,7 +1,9 @@
 class DashboardController < ApplicationController
-  def index
-  end
+	before_action :authenticate_user!
 
-  def cpa
-  end
+	def index
+	end
+
+	def cpa
+	end
 end

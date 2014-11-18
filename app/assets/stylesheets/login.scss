@@ -2,7 +2,8 @@
 	font-size: 24px;
 }
 
-#new_user {
+#new_user,
+#edit_user {
 	.field {
 		margin-top: 26px;
 		-webkit-user-select: none;
@@ -14,7 +15,7 @@
 			color: #999;
 		}
 
-		em {
+		em, i {
 			font-size: 12px;
 		}
 
@@ -44,4 +45,19 @@
 			display: none;
 		}
 	}
+}
+
+.unhappy {
+	margin-top: 14px;
+	margin-bottom: 4px;
+	color: #999;
+}
+
+.button-small {
+	padding: 10px 30px !important;
+	font-size: 16px !important;
+}
+
+.cancel-account-head {
+	margin-top: 60px;
 }
