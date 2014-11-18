@@ -1,0 +1,47 @@
+.login-head {
+	font-size: 24px;
+}
+
+#new_user {
+	.field {
+		margin-top: 26px;
+		-webkit-user-select: none;
+		user-select: none;
+
+		label:not(.remember-me) {
+			display: inline-block;
+			margin-bottom: 6px;
+			color: #999;
+		}
+
+		em {
+			font-size: 12px;
+		}
+
+		input:not([type=checkbox]) {
+			padding: 6px;
+			width: 200px;
+		}
+	}
+
+	.actions {
+		.button {
+			margin-top: 20px;
+			padding: 10px 30px;
+			font-size: 16px;
+		}
+	}
+}
+
+.links {
+	color: #28e;
+	margin-top: 20px;
+
+	.separator {
+		margin: 0 4px;
+
+		&:last-of-type {
+			display: none;
+		}
+	}
+}

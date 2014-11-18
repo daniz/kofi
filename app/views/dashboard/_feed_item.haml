@@ -1,0 +1,13 @@
+.feed-item-pic{ style: "background-image: url(#{ asset_path pic })" }
+.feed-item-name= name
+.feed-item-type= type
+.feed-item-rating
+	- rating.round.times do
+		%span.fa.fa-star
+	- (5 - rating.round).times do
+		%span.fa.fa-star-o
+.feed-item-text= text
+.feed-item-money
+	offer:
+	= money
+	%span.feed-item-money-learn-more learn more...

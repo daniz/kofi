@@ -1,0 +1,10 @@
+%h3.welcome-success Success!
+%p.welcome-text Congratulations dearie, you successfully registered to our awesome service. now, lets make you some money!
+%p.welcome-prompt Where would you like to start?
+
+.welcome-options
+	= link_to 'File for tax return', tax_return_index_path, class: 'button button-blue'
+	= link_to 'Create your financial profile', wizard_index_path, class: 'button button-blue'
+	
+	%span.welcome-options-or or
+	= link_to 'Create a CPA profile', dashboard_cpa_path, class: 'button button-green'

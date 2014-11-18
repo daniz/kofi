@@ -1,0 +1,200 @@
+
+.tax-return-section,
+.wizard-section {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
+.section-head {
+	font-size: 30px;
+}
+
+.section-desc {
+	margin-top: 20px;
+	max-width: 700px;
+	line-height: 22px;
+	font-size: 16px;
+	color: #999;
+}
+
+.section-content {
+	padding: 30px 20px;
+}
+
+.section-help {
+	margin-top: 3px;
+	color: #28e;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.tax-return-control {
+	margin-top: 20px;
+
+	.button {
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+}
+
+.next-button {
+	float: right;
+}
+
+.tax-year-selector {
+	li {
+		display: inline-block;
+		padding: 14px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		font-size: 18px;
+		color: #999;
+		cursor: pointer;
+
+		&:hover {
+			color: #444;
+			border-color: #888;
+		}
+
+		&.selected {
+			color: #28e;
+			border: 2px solid #28e;
+			padding: 13px;
+		}
+
+		transition: color .2s, border-color .2s;
+	}
+}
+
+.checkbox-list {
+	li {
+		font-size: 18px;
+		padding: 8px 0;
+		user-select: none;
+		-webkit-user-select: none;
+
+		input {
+			margin-right: 8px;
+			vertical-align: bottom;
+		}
+	}
+}
+
+.include-spouse {
+	margin-right: 10px;
+}
+
+.spouse-name-form {
+	display: none;
+	font-size: 18px;
+
+	input {
+		margin-left: 14px;
+		font-size: 18px;
+	}
+}
+
+
+.form-field {
+	.label-text {
+		display: inline-block;
+		width: 130px;
+		line-height: 38px;
+	}
+}
+
+.form-input {
+	display: inline-block;
+}
+
+.gender-male, 
+.gender-female {
+	display: inline-block;
+	padding: 4px 8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #999;
+	cursor: pointer;
+
+	&:hover {
+		color: #444;
+		border-color: #888;
+	}
+
+	&.selected {
+		color: #28e;
+		border: 2px solid #28e;
+		padding: 3px 700px;
+	}
+
+	transition: color .2s, border-color .2s;
+}
+
+.w2-uploader {
+	padding: 60px 0;
+	border: 1px dashed #d0d6de;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	background-color: #f0f6fe;
+	color: #06e;
+
+	.w2-uploader-secondary-text {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+}
+
+#final-section {
+	color: #999;
+
+	.section-head {
+		color: #444;
+	}
+
+	.section-content {
+		padding: 0;
+	}
+
+	.section-help {
+		margin-left: 6px;
+		font-size: 14px;
+	}
+}
+	
+.return-text {
+	margin: 20px 0 30px;
+	font-size: 18px;
+	color: #444;
+}
+
+.return-amount {
+	margin-left: 10px;
+	font-size: 22px;
+}
+
+.final-section-or {
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+.final-section-freetext {
+	margin: 4px 0 40px;
+	width: 600px;
+	height: 160px;
+}
+
+
+
+
+
+
+
+
+

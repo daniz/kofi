@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//  require turbolinks
+//= require jquery-ui/autocomplete
+//= require jquery-fileupload/basic
+//= require hamlcoffee
+//= require underscore
+//= require backbone
+//= require kofi
 //= require_tree .

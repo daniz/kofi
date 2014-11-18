@@ -1,0 +1,103 @@
+#dash-sidebar
+	.dash-sidebar-head Account
+	%ul.account-categories
+		%li
+			.cat-head
+				%i.fa.fa-money
+				.amount $0.00
+				Cash
+			.cat-body
+				.body-text
+					Got any cash?
+				.cta Add it now!
+		%li
+			.cat-head
+				%i.fa.fa-credit-card
+				.amount $0.00
+				Credit Cards
+			.cat-body
+				.body-text
+					Do you have a credit card?
+				.cta Add it now!
+		%li
+			.cat-head
+				%i.fa.fa-graduation-cap
+				.amount $0.00
+				Loans
+			.cat-body
+				.body-text
+					Do you have a mortgage, student loan, or auto load?
+				.cta Add them now!
+		%li
+			.cat-head
+				%i.fa.fa-line-chart
+				.amount $0.00
+				Investments
+			.cat-body
+				.body-text
+					Do you have any investment account?
+				.cta Add it now!
+
+	.dash-sidebar-head Connected Apps
+	%ul.account-categories
+		%li
+			.cat-head
+				.notifications 1
+				FeeX
+		%li
+			.cat-head
+				.notifications
+				Payz
+		%li
+			.cat-head
+				.notifications 3
+				Shopify
+		%li
+			.cat-head
+				.notifications 1
+				Eloan
+
+	.dash-sidebar-head.suppliers-head Suppliers
+	%ul.account-categories
+		%li
+			.cat-head
+				Erlich Brown 
+				%em.title (Broker)
+		%li
+			.cat-head
+				Dave
+				%em.title (Private budget manager)
+		%li
+			.cat-head
+				.notifications 3
+				Joe
+				%em.title (CPA)
+
+#dash-main
+	.dash-main-head Feed
+	%ul.dash-feed
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: '1.jpg', name: 'Joe', type: 'CPA', rating: 5, money: 'compliance', text: 'Hi Asaf your tax return is ready (sent VIA message) do you want me to e-file? Bill is 246 K.' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'payz.jpg', name: 'PayZ', type: 'App', rating: 2, money: '$5.00', text: 'Asaf, you used your Bank of America in Tesco instead of their card!' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'feex.png', name: 'Feex', type: 'App', rating: 3, money: '$20,000', text: 'You pay too much pension fees. Instead of 3% that you pay today, you can pay 2%. Send us a message.' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: '2.jpg', name: 'Dave', type: 'Private Budget Manager', rating: 5, money: 'Retainer', text: 'You saved 50$ in comparison to last month but your travel expenses is still too high' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: '3.jpg', name: 'Erlich brown', type: 'Broker', rating: 4, money: 'Document from supplier', text: 'Performance for November' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'shoeboxed.jpg', name: 'Shoeboxed', type: 'App', rating: 5, money: '$600.00', text: 'The document from Erlich Brown (broker) was archived!' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'eloan.gif', name: 'Eloan', type: 'App', rating: 4, money: '50$', text: 'The borrower was paid last payment. Would you like us to re-allocate the money?' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'visa.jpg', name: 'Visa', type: 'Financial Inst.', rating: 4, money: 'Document from supplier', text: 'Your credit card monthly statement' }
+		%li.feed-item
+			= render partial: 'feed_item', locals: { pic: 'shoeboxed.jpg', name: 'Shoeboxed', type: 'App', rating: 3, money: 'Retainer', text: 'The document from Erlich Brown, Broker was archived!' }
+
+
+
+
+
+
+

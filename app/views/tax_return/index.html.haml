@@ -1,0 +1,171 @@
+%section.tax-return-section.active#tax-year-section
+	.section-head Tax Year
+	.section-desc
+		Please select the tax year for which you would like file the tax return:
+	.section-content
+		%ul.tax-year-selector
+			%li 2007
+			%li 2008
+			%li 2009
+			%li 2010
+			%li 2011
+			%li 2012
+			%li 2013
+	.section-help Not sure what to do?
+
+
+%section.tax-return-section#marital-status-section
+	.section-head Marital Status
+	.section-desc
+		Which of the following applied to you during the requested tax year?
+
+	.section-content
+		%ul.marital-statuses.checkbox-list
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Single
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Married
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Widowed
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Divorced
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Seperated
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Cohabiting
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Same sex marriage
+
+	.section-help
+		Got any questions?
+
+%section.tax-return-section#married-intro-section
+	.section-head Filing
+	.section-desc
+		Would you like to include your spouse in the process?
+		%br
+		Since you are married we recommend you fill the data for both you and your spouse.
+		We will make sure your filing is done in an optimal way, to maximize your return.
+	.section-content
+		.spouse-buttons
+			%button.button.button-blue.include-spouse Yes, I would
+			%button.button.button-grey.exclude-spouse No, just me
+		.spouse-name-form
+			Great! what's your spouse's name?
+			%input{ type: 'text' }
+	.section-help
+		Need help deciding?
+
+%section.tax-return-section#personal-info-section
+	.section-head Personal Information	
+	.section-desc
+		Please fill out the following details:
+	.section-content
+		.form-field
+			%label
+				.label-text Birthday
+				.form-input
+					%select
+						%option{ value: -1 } Month
+						- 1.upto(12) do |m|
+							%option{ value: m }= m
+			
+				.form-input
+					%select
+						%option{ value: -1 } Day
+						- 1.upto(30) do |d|
+							%option{ value: d }= d
+
+				.form-input
+					%select
+						%option{ value: -1 } Year
+						- 1930.upto(2010) do |y|
+							%option{ value: y }= y
+
+		.form-field
+			%label
+				.label-text  Gender
+				.form-input
+					%span.gender-male Male
+					%span.gender-female Female
+
+		.form-field
+			%label
+				.label-text  Occupation
+				.form-input
+					%input{ type: 'text' }
+
+	.section-help
+		Why is this needed?
+
+%section.tax-return-section#tax-status-section
+	.section-head Tax Status
+	.section-desc
+		Which of the following applied to you during the relevant tax year?
+	.section-content
+		%ul.tax-statues.checkbox-list
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Retired
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Expatriate
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					Active military duty
+			%li
+				%label
+					%input{ type: 'checkbox' }
+					I lived in Guam, Hawai or Alaska
+			
+		
+	.section-help
+
+%section.tax-return-section#w2-section
+	.section-head Upload W2
+	.section-desc
+		Your W-2 form contains all of your vital state and federal tax information, like the amount of income you made and the total taxes you paid throughout the year. The IRS and state income tax agencies require your employers send a copy of your W-2 prior to your tax filing for comparison to the W-2 you send in. Attaching your W-2 to your tax returns properly ensures your form is not lost when your return is reviewed.
+	.section-content
+		.w2-uploader
+			Click to add files
+			.w2-uploader-secondary-text
+				or just drag them here
+
+%section.tax-return-section#final-section
+	.section-head Your done!
+	.section-content
+		.return-text
+			Your return for this tax year is: 
+			%span.return-amount 420.1$
+			%span.section-help (Any questions?)
+
+		Are there any issues you would like to discuss with our accountant?
+		%br
+		%textarea.final-section-freetext
+		.final-section-buttons
+			%button.button.button-green e-File your tax return
+			%span.final-section-or or
+			%button.button.button-blue Send to quote
+
+.tax-return-control
+	%button.button.button-grey.prev-button Go back
+	%button.button.button-green.next-button Continue
+
+
