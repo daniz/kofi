@@ -160,9 +160,22 @@
 		%br
 		%textarea.final-section-freetext
 		.final-section-buttons
-			%button.button.button-green e-File your tax return
+			%button.button.button-green#e-file-button e-File your tax return
 			%span.final-section-or or
-			%button.button.button-blue Send to quote
+			%button.button.button-blue#quote-button Send to quote
+
+%section.tax-return-section#e-file-success-section
+	.section-head Your request was e-filed successfully
+	.section-desc you should receive a response withing the next 10 days
+	.section-content
+		= link_to 'Go back to my dashboard', dashboard_index_path
+
+%section.tax-return-section#quote-success-section
+	.section-head Your request was handed over to our team of expert CPAs
+	.section-desc you should receive a response shortly
+	.section-content
+		= link_to 'Go back to my dashboard', dashboard_index_path
+
 
 .tax-return-control
 	%button.button.button-grey.prev-button Go back

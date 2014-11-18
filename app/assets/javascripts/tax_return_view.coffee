@@ -10,6 +10,8 @@ class window.TaxReturnView extends Backbone.View
 		'click .exclude-spouse'			: 'onExcludeSpouseClick'
 		'click .gender-male'			: 'onMaleClick'
 		'click .gender-female'			: 'onFemaleClick'
+		'click #e-file-button'			: 'onEFileClick'
+		'click #quote-button'			: 'onQuoteClick'
 
 
 	initialize: ->
@@ -54,6 +56,14 @@ class window.TaxReturnView extends Backbone.View
 
 	onFemaleClick: ->
 		@$('.gender-female').addClass('selected').siblings().removeClass 'selected'
+
+	onEFileClick: ->
+		@$('section.active').hide()
+		@$('#e-file-success-section').show()
+
+	onQuoteClick: ->
+		@$('section.active').hide()
+		@$('#quote-success-section').show()
 
 
 
