@@ -1,1 +1,46 @@
-%section.wizard-section#cash-section
+%section.wizard-section#cash-section.active
+	.section-head Start creating your profile
+	.section-desc
+		Please fill in the following details
+	.section-content
+		%ul.wiz-categories
+			%li
+				.cat-head
+					%i.fa.fa-money
+					.amount $0.00
+					Cash
+				.cat-body
+					.body-text
+						Got any cash?
+					.cta Add it now!
+			%li
+				.cat-head
+					%i.fa.fa-credit-card
+					.amount $0.00
+					Credit Cards
+				.cat-body
+					.body-text
+						Do you have a credit card?
+					.cta Add it now!
+			%li
+				.cat-head
+					%i.fa.fa-graduation-cap
+					.amount $0.00
+					Loans
+				.cat-body
+					.body-text
+						Do you have a mortgage, student loan, or auto load?
+					.cta Add them now!
+			%li
+				.cat-head
+					%i.fa.fa-line-chart
+					.amount $0.00
+					Investments
+				.cat-body
+					.body-text
+						Do you have any investment account?
+					.cta Add it now!
+
+.wiz-buttons
+	%a.button.button-small.button-grey{ href: dashboard_index_path } Skip
+	%a.button.button-small.button-green{ href: dashboard_index_path } Continue
