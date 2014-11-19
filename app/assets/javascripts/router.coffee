@@ -1,4 +1,5 @@
 #= require ./tax_return_view
+#= require ./dash_view
 
 class Kofi.Router extends Backbone.Router
 
@@ -14,6 +15,7 @@ class Kofi.Router extends Backbone.Router
 
 	dashboard: ->
 		$('#header-nav-dash').addClass 'active'
+		new DashView
 
 	wizard: ->
 		$('#header-nav-dash').addClass 'active'

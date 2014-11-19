@@ -10,6 +10,11 @@
 	font-size: 22px;
 	font-size: 700;
 	color: #222;
+
+	em {
+		font-size: 14px;
+		color: #aaa;
+	}
 }
 
 .cat-head {
@@ -74,7 +79,7 @@
 }
 
 .feed-item {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	padding: 18px;
 	width: 600px;
 	border: 1px solid #e8e8e8;
@@ -134,4 +139,95 @@
 .suppliers-head {
 	margin-top: 20px;
 }
+
+.dash-app-pic {
+	display: inline-block;
+	background-repeat: no-repeat;
+	// background-size: cover;
+	background-position: 20px 46%;
+	width: 160px;
+	height: 160px;
+	float: left;
+	border: 1px solid #ddd;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.dash-main-section {
+	display: none;
+	min-width: 700px;
+
+	&.active {
+		display: block;
+	}
+}
+
+.dash-app-title {
+	// margin-left: 170px;
+}
+
+.dash-app-rating {
+	color: #f80;
+}
+
+.dash-app-desc {
+	margin-top: 10px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #999;
+}
+
+.message {
+	border-bottom: 1px solid #ddd;
+	font-weight: 700;
+	cursor: pointer;
+
+	&:last-child {
+		border: none;
+	}
+
+	&.read {
+		background-color: #f8f8f8;
+		font-weight: 300;
+	}
+}
+	
+.messages-head {
+	margin-top: 40px;
+	padding-left: 0;
+}
+
+.dash-app-messages {
+	padding-top: 20px;
+	border-top: 1px solid #ddd;
+}
+
+.message-subject,
+.message-content,
+.message-date {
+	display: inline-block;
+	padding: 8px 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.message-subject {
+	width: 100px;
+}
+
+.message-content {
+	width: 400px;
+}
+
+.message-date {
+	width: 100px;
+	color: #999;
+}
+
+
+
+
+
 
